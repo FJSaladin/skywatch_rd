@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 import 'package:skywatch_rd/core/theme/app_theme.dart';
 
 void main() {

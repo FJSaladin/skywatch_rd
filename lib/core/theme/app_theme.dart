@@ -34,7 +34,7 @@ class AppTheme {
       elevation: 4,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(16),
-        side: BorderSide(color: nebulaPurple.withOpacity(0.3)),
+        side: BorderSide(color: nebulaPurple.withValues(alpha: 0.3)),
       ),
     ),
     floatingActionButtonTheme: const FloatingActionButtonThemeData(
@@ -46,11 +46,11 @@ class AppTheme {
       fillColor: deepBlue,
       border: OutlineInputBorder(
         borderRadius: BorderRadius.circular(12),
-        borderSide: BorderSide(color: nebulaPurple.withOpacity(0.5)),
+        borderSide: BorderSide(color: nebulaPurple.withValues(alpha: 0.5)),
       ),
       enabledBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(12),
-        borderSide: BorderSide(color: nebulaPurple.withOpacity(0.5)),
+        borderSide: BorderSide(color: nebulaPurple.withValues(alpha: 0.5)),
       ),
       focusedBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(12),
