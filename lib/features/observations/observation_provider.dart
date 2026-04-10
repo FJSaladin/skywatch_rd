@@ -1,6 +1,10 @@
 import 'package:flutter/foundation.dart';
 import '../../data/models/observation_model.dart';
 import '../../data/repositories/observation_repository.dart';
+import 'dart:convert';
+import 'package:share_plus/share_plus.dart';
+
+
 
 enum LoadingState { idle, loading, success, error }
 
@@ -40,6 +44,12 @@ class ObservationProvider extends ChangeNotifier {
       _errorMessage = e.toString();
       _setState(LoadingState.error);
     }
+  }
+
+  Future<void> exportObservation(ObservationModel obs) async {
+    final json    = const JsonEncoder.withIndent('  ').convert(obs.toMap());
+    final subject = 'Observación: ${obs.titulo}';
+    await Share.share(json, subject: subject);
   }
 
   // ── Guardar ───────────────────────────────────────────────

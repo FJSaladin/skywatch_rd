@@ -43,3 +43,16 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# Android local config (específico de cada máquina)
+android/local.properties
+android/.gradle/
+
+# Archivos de base de datos generados en runtime
+*.db
+*.db-shm
+*.db-wal
+
+# Archivos de audio/foto generados por la app en desarrollo
+*.m4a
+*.aac
